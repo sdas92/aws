@@ -1,5 +1,6 @@
 #******************Author:Somnath Das**********************
 #******AWS-CLI should be configured prior to run this******
+#Inserting an item into existing DynamoDB table.
 
 import boto3
 
