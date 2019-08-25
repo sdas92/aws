@@ -18,5 +18,4 @@ def printBuckets():
     print(Fore.GREEN + bkt_nm + Fore.RESET + " was created on: " + create_date + " and owner is: " + Fore.CYAN + bkt_resp['Owner']['DisplayName'] + Fore.RESET)
 #Bucket print ends.
 
-
 printBuckets()
