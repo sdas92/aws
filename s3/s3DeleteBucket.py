@@ -16,7 +16,7 @@ def deleteBucket(bucket_name):
 bucket_name = input("Enter your bucket name: ")
 try:
   deleteBucket(bucket_name)
-  print("Deleted your bucket: !" % bucket_name)
+  print("Deleted your bucket: %s !" % bucket_name)
 except ClientError as e:
   print(e)
   input("Wait till exit: ")
