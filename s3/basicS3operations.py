@@ -276,4 +276,4 @@ def main():
 #Main method ends.
 
 main()
-print("Thanks from Somnath _/\_ \n\n")
+print("Thanks from Somnath _/\_ \n")
