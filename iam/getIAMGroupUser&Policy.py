@@ -9,7 +9,7 @@ from botocore.exceptions import ClientError
 
 #Global Variables
 acc_id = '12345'
-acc_name = "ACC NAME"
+acc_name = "LOREAL AMER"
 
 #Create IAM client & resource objects. Then get all group names.
 iam_client = boto3.client('iam')
@@ -36,8 +36,10 @@ def getGroupUsersPolicy(group_list):
       for policy in grp_pl:
         grp_pl_txt += str(policy)
         grp_pl_txt += " + "
-      if len(grp_pl_txt) > 0:
+      if len(grp_pl_txt) > 1:
         grp_pl_txt = grp_pl_txt[:-2]
+      else:
+        grp_pl_txt = 'null'
       csv_file.write("%s,%s,%s,%s,%s\n" % (acc_id, acc_name, group, usr_nm, grp_pl_txt))
   csv_file.close()
   print("Created the RBAC report for %d number of groups" % (len(group_list)))
