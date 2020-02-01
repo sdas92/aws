@@ -9,7 +9,7 @@ from botocore.exceptions import ClientError
 
 #Global Variables
 acc_id = '12345'
-acc_name = "LOREAL AMER"
+acc_name = "ACC NAME"
 
 #Create IAM client & resource objects. Then get all group names.
 iam_client = boto3.client('iam')
