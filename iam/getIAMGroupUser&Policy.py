@@ -37,7 +37,7 @@ def getGroupUsersPolicy(group_list):
         grp_pl_txt += str(policy)
         grp_pl_txt += " + "
       if len(grp_pl_txt) > 0:
-        grp_pl_txt = grp_pl_txt[:-1]
+        grp_pl_txt = grp_pl_txt[:-2]
       csv_file.write("%s,%s,%s,%s,%s\n" % (acc_id, acc_name, group, usr_nm, grp_pl_txt))
   csv_file.close()
   print("Created the RBAC report for %d number of groups" % (len(group_list)))
