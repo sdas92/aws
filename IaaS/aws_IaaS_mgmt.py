@@ -13,9 +13,6 @@ elb = boto3.client('elbv2')
 atscl = boto3.client('autoscaling')
 vpc_id = ""
 
-
-
-
 #|||Method declarations starts here....
 #This section selects an string item from given list and returns selected str...
 def selectItemfromList(get_list, call_name):
